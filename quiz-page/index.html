@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <title>Quiz App</title>
+</head>
+<body >
+    <div class="quiz-container">
+        <h1 style="font-size: 50px;">Quiz</h1>
+        <div id="quiz">
+            <p id="question" style="font-size: 30px;">Question 1:</p>
+            <form id="quiz-form">
+                <div id="options" style="font-size: 20px;"></div>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+            <div id="timer">Time Left: 30 seconds</div>
+        </div>
+        <div id="result" style="display: none;">
+            <h2>Quiz Results</h2>
+            <table id="result-table">
+                <tr>
+                    <th>Question</th>
+                    <th>Time Taken (seconds)</th>
+                    <th>selected answer</th>
+                    <th>correct answer</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
